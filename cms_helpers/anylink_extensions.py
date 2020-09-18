@@ -4,9 +4,10 @@ from cms.utils.conf import get_cms_setting
 from django.conf import settings
 from django.core.cache import cache
 from django.db import models
-from django.utils.six.moves.urllib import parse as urlparse
 from django.utils.translation import get_language
 from django.utils.translation import ugettext_lazy as _
+
+from six.moves.urllib import parse as urlparse
 
 
 class CmsPageLink(BaseLink):
